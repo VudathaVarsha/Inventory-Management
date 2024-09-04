@@ -1,0 +1,24 @@
+<!-- delete_item.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Item</title>
+</head>
+<body>
+  <h1>Delete Item</h1>
+  <p>Are you sure you want to delete the following item?</p>
+  <ul>
+    <li>ID: <%= item.id %></li>
+    <li>Name: <%= item.Item %></li>
+    <li>Quantity: <%= item.Quantity %></li>
+    <li>Price: <%= item.Price %></li>
+    <li>Description: <%= item.Description %></li>
+  </ul>
+  <form action="/inventory/delete/<%= item.id %>" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <button type="submit">Delete</button>
+  </form>
+</body>
+</html>

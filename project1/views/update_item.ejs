@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Item</title>
+  <style>
+    td {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <center><h1>Update Item</h1>
+  <form action="/inventory/<%= itemId %>" method="POST">
+    <table>
+      <tr>
+        <td><label for="Item">Item Name:</label></td>
+        <td><input type="text" id="Item" name="Item" value="<%= item.Item %>"></td>
+      </tr>
+      <tr>
+        <td><label for="Quantity">Quantity:</label></td>
+        <td><input type="number" id="Quantity" name="Quantity" value="<%= item.Quantity %>"></td>
+      </tr>
+      <tr>
+        <td><label for="Price">Price:</label></td>
+        <td><input type="number" id="Price" name="Price" step="0.01" value="<%= item.Price %>"></td>
+      </tr>
+      <tr>
+        <td><label for="Description">Description:</label></td>
+        <td><input type="text" id="Description" name="Description" value="<%= item.Description %>" style="width:300px;"</td>
+      </tr>
+    </table>
+    <br><br>
+    <button type="submit">Update</button>
+  </form></center>
+  
+</body>
+</html>

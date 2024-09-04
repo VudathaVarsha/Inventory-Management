@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Item</title>
+  <style>
+    td {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+ <center><h1>Enter Item Details</h1>
+  <form action="/inventory/add" method="POST">
+    <table>
+     <tr>
+       <td><label for="id">ID:</label></td>
+       <td><input type="text" id="id" name="id" required></td>
+     </tr>
+     <tr>
+       <td><label for="Item">Item Name:</label></td>
+       <td><input type="text" id="Item" name="Item" required></td>
+     <tr>
+       <td><label for="Quantity">Quantity:</label></td>
+       <td><input type="text" id="Quantity" name="Quantity" required></td>
+     </tr>
+     <tr>
+       <td><label for="Price">Price:</label></td>
+       <td><input type="text" id="Price" name="Price" required></td>
+     </tr>
+     <tr>
+        <td><label for="Description">Description:</label></td>
+        <td><input type="text" id="Description" name="Description" required></td>
+     </tr>
+    </table>
+    <br><br>
+    <button type="submit">Add</button>
+  </form></center>
+</body>
+</html>

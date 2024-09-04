@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item</title>
+    <style>
+      table{
+        text-align: center;
+        border-collapse: collapse;
+        border: 3px solid black;
+        margin-top:10%;
+      }
+      th,td{
+        padding: 7px;
+      }
+    </style>
+</head>
+<body>
+    <center><table border="1">
+        <tr style="border: 3px solid black;">
+          <th>ID</th>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><%= item.id %></td>
+          <td><%= item.Item %></td>
+          <td><%= item.Quantity %></td>
+          <td><%= item.Price %></td>
+          <td><%= item.Description %></td>
+        </tr>
+      </table></center>
+</body>
+</html>

@@ -1,0 +1,9 @@
+>>db.inventory1.insertMany([  
+  {id: 1, Item: 'Laptop', Quantity: 10, Price: 89000.00, Description: '15-inch laptop with Intel Core i7 processor'},
+  {id: 2, Item: 'Smartphone', Quantity: 20, Price: 59000.00, Description: 'Android smartphone with 6.5-inch display'},
+  {id: 3, Item: 'Tablet', Quantity: 15, Price: 100000.00, Description: '10-inch tablet with Wi-Fi and 64GB storage'},
+  {id: 4, Item: 'Headphones', Quantity: 30, Price: 1499.00, Description: 'Wireless headphones with noise cancellation'},
+  {id: 5, Item: 'Printer', Quantity: 12, Price: 10000.00, Description: 'printer with scanning and copying capabilities'},
+  {id: 6, Item: 'Wireless Router', Quantity: 25, Price: 1000.00, Description: 'Dual-band wireless router for high-speed internet connectivity'},
+  {id: 7, Item: 'External HardDrive', Quantity: 18, Price: 199.99, Description: '1TB portable external hard drive for data backup and storage'}
+])
